@@ -1,0 +1,56 @@
+body {
+    background-color: #7c98b3;
+    margin-bottom: 8rem;
+}
+h1 {
+    margin-left: 4rem;
+    margin-bottom: 0px;
+    font-size: 4rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+.images {
+    vertical-align: middle;
+    }
+#headshot {
+    border-radius: 50%;
+    border: solid black #536b78;
+    margin-left: 3rem;
+    width: 15%;
+    /* margin-bottom: 1rem; */
+    width: 9rem;
+}
+#blinky {
+    width: 30%;
+    margin-left: 45%;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+#title {
+    margin-left: 4rem;
+    margin-top: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+}
+.block {
+    border: solid #536b78 .15rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: 1rem;
+    padding-top: 0rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background-color: #cee5f2;
+}
+.company-divide {
+    border-top: solid #536b78 .10rem;
+}
+.title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.company-name {
+    font-style: italic;
+}
