@@ -16,15 +16,22 @@ h2 {
 #headshot {
     border-radius: 50%;
     border: solid black #536b78;
-    margin-left: 3rem;
-    width: 15%;
-    width: 9rem;
+    width: 25%;
+    max-width: 20rem;
+}
+#images {
+    height: 20rem;
 }
 #blinky {
-    width: 30%;
-    margin-left: 45%;
+    width: 45%;
+    max-width: 30rem;
     border-radius: 10px;
-    margin-top: 1rem;
+}
+.flexbox-container {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #title {
@@ -59,6 +66,4 @@ h2 {
 .company-logo {
     width: 48px;
     height: 48px;
-    /* box-sizing: border-box;
-    background-clip: content-box; */
 }
