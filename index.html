@@ -3,152 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathan Wikman Resume</title>
+    <title>Flexbox Demo</title>
     <link rel="icon" type="image/x-icon" href="/img/folder-dynamic-premium.png">
     <!-- Favicon from 3dICONS, check them out at https://3dicons.co/ -->
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
-<h1>Nathan Wikman</h1>
+
+    <h1>Nathan Wikman</h1>
 <p id="title">Solutions Architect &#64; Integris</p>
 <div id="images" class="block flexbox-container">
         <img class="images" id="headshot" src="./img/nathan.jpeg" alt="nathan_wikman">
         <img class="images" id="blinky" src="./img/713171601807249408.gif" alt="blinky-blinkey">
 </div>
-<div class="block">
-    <h2>About</h2>
-    <p>Network and systems engineer supporting clients in the finance and banking industry, skilled in Azure, Cisco networking, Windows server administration, Office 365, and VMware virtualization. Strengths include commitment to the job, a passion for customer experience that forges positive perception and satisfaction, strong communication and stakeholder management, and technical expertise.
-    </p>
-</div>
-<div class="block">
-    <h2>Experience</h2>
-<div class="company">
-    <div class="role">
-        <img class="company-logo" src="https://media.licdn.com/dms/image/C4D0BAQEdRuehGN2rGQ/company-logo_100_100/0/1633369276620/domain_technology_partners_logo?e=1707350400&v=beta&t=eublF2aKFxd4MjuvsNXb0A-KewCIsx8GV45Ar1oPqwY" alt="Integris-Logo">
-        <p class="title">PMO Solutions Architect</p>
-        <p class="company-name">Integris &#183; Full-time</p>
-        <p>Austin, Texas Metropolitan Area &#183; Remote</p>
-        <ul>
+
+
+<!-- This class block contains the About section -->
+    <div class="block">
+        <div class="role-text">
+            <h2>About</h2>
+            <p>Network and systems engineer supporting clients in the finance and banking industry, skilled in Azure, Cisco networking, Windows server administration, Office 365, and VMware virtualization. Strengths include commitment to the job, a passion for customer experience that forges positive perception and satisfaction, strong communication and stakeholder management, and technical expertise.
+            </p>
+    </div>
+    </div>
+
+
+    <!-- This class block div represents the entire work experience block on the page -->
+    <div class="block">
+        <!-- This role-section div represent a single work-role -->
+        <div class="role-section">
+            <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
+            <div class="role-header-flexbox">
+                <img class="role-img" src="https://media.licdn.com/dms/image/C4D0BAQEdRuehGN2rGQ/company-logo_100_100/0/1633369276620/domain_technology_partners_logo?e=1707350400&v=beta&t=eublF2aKFxd4MjuvsNXb0A-KewCIsx8GV45Ar1oPqwY" alt="Integris-Logo">
+                <div class="role-text">
+                    <p class="role-title">PMO Solutions Architect</p>
+                    <p class="role-details">Integris &#183; Full-time</p>
+                    <p class="role-details">Austin, Texas Metropolitan Area &#183; Remote</p>
+                </div>
+            </div>
+            <!-- This role-experience span contains the ul of work experience role -->
+            <span class="role-experience">
+                <ul class="role-text">
             <li>Design &amp; deployed Azure networks</li>
             <li>Design &amp; deployed hybrid connectivity (Azure VPN Gateway, 3rd party NVA's)</li>
             <li>Primary technical resource for server and network migrations</li>
         </ul>
-        <p><b>Skills:</b> Network Administration &#183; Azure Networking &#183; Cisco Networking &#183; Windows Server &#183; VMware &#183; Microsoft 365</p>
-    </div>
-    <hr class="company-divide">
-    </div>
-    <div class="company">
-        <div class="role">
-            <img class="company-logo" src="https://media.licdn.com/dms/image/C4D0BAQEdRuehGN2rGQ/company-logo_100_100/0/1633369276620/domain_technology_partners_logo?e=1707350400&v=beta&t=eublF2aKFxd4MjuvsNXb0A-KewCIsx8GV45Ar1oPqwY" alt="Integris-Logo">
-            <p class="title">Project Engineer III</p>
-            <p class="company-name">CalTech Software Systems &#183; Full-time</p>
-            <p>Austin, Texas Metropolitan Area &#183; Remote</p>
-            <ul>
-                <li>Lead engineer on new customer onboardings</li>
-                <li>Lead engineer on server migrations to the CalTech datacenter</li>
-                <li>Senior technical resource for project engineers</li>
-                <li>Migrated core banking routers to the CalTech datacenter</li>
-                <li>Network upgrades deploying Cisco routers, switches, and firewalls</li>
-                <li>Windows server migrations from 2008/2012 to server 2019</li>
-                <li>Deployed, documented, and created standard processes around CalTech's new cybersecurity product</li>
-                <li>Conducted cybersecurity product deployment training for project engineers</li>
-            </ul>
+        <p class="role-text"><b>Skills:</b> Network Administration &#183; Azure Networking &#183; Cisco Networking &#183; Windows Server &#183; VMware &#183; Microsoft 365</p>
+            </span>
         </div>
-        <div class="role">
-            <img class="company-logo" src="https://media.licdn.com/dms/image/C4D0BAQEdRuehGN2rGQ/company-logo_100_100/0/1633369276620/domain_technology_partners_logo?e=1707350400&v=beta&t=eublF2aKFxd4MjuvsNXb0A-KewCIsx8GV45Ar1oPqwY" alt="Integris-Logo">
-            <p class="title">Project Engineer II</p>
-            <p class="company-name">CalTech Software Systems</p>
-            <p>Austin, Texas Metropolitan Area &#183; Onsite</p>
-            <ul>
-                <li>Scoped and priced client projects and exceeded target efficiency by 6%</li>
-                <li>Surpassed yearly revenue goal</li>
-                <li>Executed server 2008 to server 2019 migrations</li>
-                <li>Performed network upgrades including Cisco 2960 and 9200 series switches, Cisco ISR 4000 series routers, - Cisco ASA 5506, Cisco Call Manager Express, Cisco Meraki access points and switches, and Cisco AnyConnect VPN</li>
-                <li>Planned and executed new site turn ups</li>
-                <li>Migrated core banking routers to the CalTech datacenters</li>
-                <li>Upgraded ATMs and ATM network equipment</li>
-                <li>Configured Microsoft MDT Server to facilitate mass Windows 10 deployments</li>
-                <li>Installed and upgraded VMWare ESXi versions 5.x, 6.x, and 7.x including SAN implementations</li>
-                <li>Migrated clients from Exchange 2013/2016 to Office 365</li>
-                <li>Configured Office 365 for DMARC email security</li>
-                <li>Migrated clients between email filter and email encryption solutions</li>
-                <li>Deployed Microsoft Intune MDM for mobile device and mobile app management</li>
-                <li>Built Azure Conditional Access rules securing access to Azure and Office 365</li>
-            </ul>
+
+        <hr class="company-divide">
+
+        <!-- This role-section div represent a single work-role -->
+        <div class="role-section">
+            <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
+            <div class="role-header-flexbox">
+                <img class="role-img" src="https://media.licdn.com/dms/image/C4D0BAQEdRuehGN2rGQ/company-logo_100_100/0/1633369276620/domain_technology_partners_logo?e=1707350400&v=beta&t=eublF2aKFxd4MjuvsNXb0A-KewCIsx8GV45Ar1oPqwY" alt="Integris-Logo">
+                <div class="role-text">
+                    <p class="role-title">Project Enginner III</p>
+                    <p class="role-details">CalTech &#183; Full-time</p>
+                    <p class="role-details">Austin, Texas Metropolitan Area &#183; Remote</p>
+                </div>
+            </div>
+            <!-- This role-experience span contains the ul of work experience role -->
+            <span class="role-experience">
+                <ul class="role-text">
+                    <li>Lead engineer on new customer onboardings</li>
+                    <li>Lead engineer on server migrations to the CalTech datacenter</li>
+                    <li>Senior technical resource for project engineers</li>
+                    <li>Migrated core banking routers to the CalTech datacenter</li>
+                    <li>Network upgrades deploying Cisco routers, switches, and firewalls</li>
+                    <li>Windows server migrations from 2008/2012 to server 2019</li>
+                    <li>Deployed, documented, and created standard processes around CalTech's new cybersecurity product</li>
+                    <li>Conducted cybersecurity product deployment training for project engineers</li>
+        </ul>
+        <p class="role-text"><b>Skills:</b> Network Administration &#183; Azure Networking &#183; Cisco Networking &#183; Windows Server &#183; VMware &#183; Microsoft 365</p>
+            </span>
         </div>
-        <div class="role">
-            <img class="company-logo" src="https://media.licdn.com/dms/image/C4D0BAQEdRuehGN2rGQ/company-logo_100_100/0/1633369276620/domain_technology_partners_logo?e=1707350400&v=beta&t=eublF2aKFxd4MjuvsNXb0A-KewCIsx8GV45Ar1oPqwY" alt="Integris-Logo">
-            <p class="title">Tier II Engineer</p>
-            <p class="company-name">CalTech Software Systems</p>
-            <p>Austin, Texas Metropolitan Area &#183; Onsite</p>
-            <ul>
-                <li>Provide support and resolutio for Priority 1 issues</li>
-                <li>Escalation point for helpdesk tickets</li>
-                <li>Documented customer networks and tested critical backup infrastructure</li>
-                <li>Migrated email filtering services from on premise Linux appliances to Zix cloud-based encryption</li>
-                <li>Migrated email filtering services from on Sophos Reflexion to Zix cloud-based filter</li>
-            </ul>
+<!-- This role-section div represent a single work-role -->
+        <div class="role-section">
+            <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
+            <div class="role-header-flexbox">
+                <img class="role-img" src="https://media.licdn.com/dms/image/C4D0BAQEdRuehGN2rGQ/company-logo_100_100/0/1633369276620/domain_technology_partners_logo?e=1707350400&v=beta&t=eublF2aKFxd4MjuvsNXb0A-KewCIsx8GV45Ar1oPqwY" alt="Integris-Logo">
+                <div class="role-text">
+                    <p class="role-title">Project Engineer II</p>
+                    <p class="role-details">CalTech &#183; Full-time</p>
+                    <p class="role-details">Austin, Texas Metropolitan Area &#183; Onsite</p>
+                </div>
+            </div>
+            <!-- This role-experience span contains the ul of work experience role -->
+            <span class="role-experience">
+                <ul class="role-text">
+                    <li>Scoped and priced client projects and exceeded target efficiency by 6%</li>
+                    <li>Surpassed yearly revenue goal</li>
+                    <li>Executed server 2008 to server 2019 migrations</li>
+                    <li>Performed network upgrades including Cisco 2960 and 9200 series switches, Cisco ISR 4000 series routers, - Cisco ASA 5506, Cisco Call Manager Express, Cisco Meraki access points and switches, and Cisco AnyConnect VPN</li>
+                    <li>Planned and executed new site turn ups</li>
+                    <li>Migrated core banking routers to the CalTech datacenters</li>
+                    <li>Upgraded ATMs and ATM network equipment</li>
+                    <li>Configured Microsoft MDT Server to facilitate mass Windows 10 deployments</li>
+                    <li>Installed and upgraded VMWare ESXi versions 5.x, 6.x, and 7.x including SAN implementations</li>
+                    <li>Migrated clients from Exchange 2013/2016 to Office 365</li>
+                    <li>Configured Office 365 for DMARC email security</li>
+                    <li>Migrated clients between email filter and email encryption solutions</li>
+                    <li>Deployed Microsoft Intune MDM for mobile device and mobile app management</li>
+                    <li>Built Azure Conditional Access rules securing access to Azure and Office 365</li>
+        </ul>
+        <p class="role-text"><b>Skills:</b> Network Administration &#183; Azure Networking &#183; Cisco Networking &#183; Windows Server &#183; VMware &#183; Microsoft 365</p>
+            </span>
         </div>
-        <div class="role">
-            <img class="company-logo" src="https://media.licdn.com/dms/image/C4D0BAQEdRuehGN2rGQ/company-logo_100_100/0/1633369276620/domain_technology_partners_logo?e=1707350400&v=beta&t=eublF2aKFxd4MjuvsNXb0A-KewCIsx8GV45Ar1oPqwY" alt="Integris-Logo">
-            <p class="title">Tier I Engineer</p>
-            <p class="company-name">CalTech Software Systems</p>
-            <p>Austin, Texas Metropolitan Area &#183; Onsite</p>
-            <ul>
-                <li>Provided first line of support for customers and internal staff</li>
-                <li>Resolved break/fix issues with a priority placed upon customer service, perception, and satisfaction</li>
-                <li>Created and updated knowledge base articles with issue resolution and created documentation for software installation and upgrades</li>
-                <li>Applied working knowledge of policies and procedures, determining the best course of action to resolve issues according to service-level objectives</li>
-                <li>Managed workstation upgrades for multiple projects, installing hardware, software, and peripherals, and provided onsite support for clients in the greater Austin area</li>
-                <li>Assisted new team members with technical issues, workflow, and proper escalation procedures</li>
-            </ul>
+
+
+        <!-- This role-section div represent a single work-role -->
+        <div class="role-section">
+            <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
+            <div class="role-header-flexbox">
+                <img class="role-img" src="https://media.licdn.com/dms/image/C4D0BAQEdRuehGN2rGQ/company-logo_100_100/0/1633369276620/domain_technology_partners_logo?e=1707350400&v=beta&t=eublF2aKFxd4MjuvsNXb0A-KewCIsx8GV45Ar1oPqwY" alt="Integris-Logo">
+                <div class="role-text">
+                    <p class="role-title">Tier 2 Engineer</p>
+                    <p class="role-details">CalTech &#183; Full-time</p>
+                    <p class="role-details">Austin, Texas Metropolitan Area &#183; Onsite</p>
+                </div>
+            </div>
+            <!-- This role-experience span contains the ul of work experience role -->
+            <span class="role-experience">
+                <ul class="role-text">
+                    <li>Provide support and resolutio for Priority 1 issues</li>
+                    <li>Escalation point for helpdesk tickets</li>
+                    <li>Documented customer networks and tested critical backup infrastructure</li>
+                    <li>Migrated email filtering services from on premise Linux appliances to Zix cloud-based encryption</li>
+                    <li>Migrated email filtering services from on Sophos Reflexion to Zix cloud-based filter</li>
+        </ul>
+        <p class="role-text"><b>Skills:</b> Network Administration &#183; Azure Networking &#183; Cisco Networking &#183; Windows Server &#183; VMware &#183; Microsoft 365</p>
+            </span>
+        </div>
+
+
+        <!-- This role-section div represent a single work-role -->
+        <div class="role-section">
+            <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
+            <div class="role-header-flexbox">
+                <img class="role-img" src="https://media.licdn.com/dms/image/C4D0BAQEdRuehGN2rGQ/company-logo_100_100/0/1633369276620/domain_technology_partners_logo?e=1707350400&v=beta&t=eublF2aKFxd4MjuvsNXb0A-KewCIsx8GV45Ar1oPqwY" alt="Integris-Logo">
+                <div class="role-text">
+                    <p class="role-title">Tier 1 Engineer</p>
+                    <p class="role-details">CalTech &#183; Full-time</p>
+                    <p class="role-details">Austin, Texas Metropolitan Area &#183; Onsite</p>
+                </div>
+            </div>
+            <!-- This role-experience span contains the ul of work experience role -->
+            <span class="role-experience">
+                <ul class="role-text">
+                    <li>Provided first line of support for customers and internal staff</li>
+                    <li>Resolved break/fix issues with a priority placed upon customer service, perception, and satisfaction</li>
+                    <li>Created and updated knowledge base articles with issue resolution and created documentation for software installation and upgrades</li>
+                    <li>Applied working knowledge of policies and procedures, determining the best course of action to resolve issues according to service-level objectives</li>
+                    <li>Managed workstation upgrades for multiple projects, installing hardware, software, and peripherals, and provided onsite support for clients in the greater Austin area</li>
+                    <li>Assisted new team members with technical issues, workflow, and proper escalation procedures</li>
+        </ul>
+        <p class="role-text"><b>Skills:</b> Network Administration &#183; Azure Networking &#183; Cisco Networking &#183; Windows Server &#183; VMware &#183; Microsoft 365</p>
+            </span>
+        </div>
+
+        <hr class="company-divide">
+
+        <!-- This role-section div represent a single work-role -->
+        <div class="role-section">
+            <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
+            <div class="role-header-flexbox">
+                <img class="role-img" src="https://media.licdn.com/dms/image/D560BAQGs1CBbJ5vMPA/company-logo_100_100/0/1663676834577/baesystemsinc_logo?e=1707350400&v=beta&t=yGRBpRbgkStjegmUULTDTZybJotmIqLyt5tLgbqjR6Q" alt="BAE Systems-Logo">
+                <div class="role-text">
+                    <p class="role-title">Tech Intern II</p>
+                    <p class="role-details">BAE Systems &#183; Full-time</p>
+                    <p class="role-details">Hudson, NH &#183; Onsite</p>
+                </div>
+            </div>
+            <!-- This role-experience span contains the ul of work experience role -->
+            <span class="role-experience">
+                <ul class="role-text">
+                    <li>Supported Engineering Tools group, handling break/fix tickets in Remedy and tested applications in Windows 10 ahead of Windows 7 to Windows 10 upgrades</li>
+                    <li>Converted internal web-based applications from self-signed certificates to Active Directory PKI, including IBM Apache server</li>
+        </ul>
+        <p class="role-text"><b>Skills:</b> Network Administration &#183; Azure Networking &#183; Cisco Networking &#183; Windows Server &#183; VMware &#183; Microsoft 365</p>
+            </span>
+        </div>
+
+        <!-- This role-section div represent a single work-role -->
+        <div class="role-section">
+            <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
+            <div class="role-header-flexbox">
+                <img class="role-img" src="https://media.licdn.com/dms/image/D560BAQGs1CBbJ5vMPA/company-logo_100_100/0/1663676834577/baesystemsinc_logo?e=1707350400&v=beta&t=yGRBpRbgkStjegmUULTDTZybJotmIqLyt5tLgbqjR6Q" alt="BAE Systems-Logo">
+                <div class="role-text">
+                    <p class="role-title">Tech Intern I</p>
+                    <p class="role-details">BAE Systems &#183; Full-time</p>
+                    <p class="role-details">Merrimack, NH &#183; Onsite</p>
+                </div>
+            </div>
+            <!-- This role-experience span contains the ul of work experience role -->
+            <span class="role-experience">
+                <ul class="role-text">
+                    <li>Provided helpdesk first line of support for end users, handling break/fix tickets in Remedy for software applications and hardware issues</li>
+                    <li>Performed desktop upgrades, inventory management, and printer support for multiple sites</li>
+        </ul>
+        <p class="role-text"><b>Skills:</b> Network Administration &#183; Azure Networking &#183; Cisco Networking &#183; Windows Server &#183; VMware &#183; Microsoft 365</p>
+            </span>
         </div>
     </div>
-    <hr class="company-divide">
-    <div class="company">
-        <div class="role">
-            <img class="company-logo" src="https://media.licdn.com/dms/image/D560BAQGs1CBbJ5vMPA/company-logo_100_100/0/1663676834577/baesystemsinc_logo?e=1707350400&v=beta&t=yGRBpRbgkStjegmUULTDTZybJotmIqLyt5tLgbqjR6Q" alt="BAE Systems-Logo">
-            <p class="title">Tech Intern II</p>
-            <p class="company-name">BAE Systems, Inc.</p>
-            <p>Hudson, Hew Hampshire</p>
-            <ul>
-                <li>Supported Engineering Tools group, handling break/fix tickets in Remedy and tested applications in Windows 10 ahead of Windows 7 to Windows 10 upgrades</li>
-                <li>Converted internal web-based applications from self-signed certificates to Active Directory PKI, including IBM Apache server</li>
-            </ul>
-        </div>
-        <div class="role">
-            <img class="company-logo" src="https://media.licdn.com/dms/image/D560BAQGs1CBbJ5vMPA/company-logo_100_100/0/1663676834577/baesystemsinc_logo?e=1707350400&v=beta&t=yGRBpRbgkStjegmUULTDTZybJotmIqLyt5tLgbqjR6Q" alt="BAE Systems-Logo">
-            <p class="title">Tech Intern I</p>
-            <p class="company-name">BAE Systems, Inc.</p>
-            <p>Merrimack, New Hampshire</p>
-            <ul>
-                <li>Provided helpdesk first line of support for end users, handling break/fix tickets in Remedy for software applications and hardware issues</li>
-                <li>Performed desktop upgrades, inventory management, and printer support for multiple sites</li>
-            </ul>
-        </div>
+
+    <!-- This class block div represent the Education section -->
+    <div class="block">
+        <div class="role-section">
+            <!-- This role-header-flexbox is a flex container that holds the role header data: img, school, degree -->
+            <div class="role-header-flexbox">
+                <img class="role-img" src="https://media.licdn.com/dms/image/C560BAQGJ5uL-usZ0Yg/company-logo_100_100/0/1638370038780/thomas_edison_state_university_logo?e=1707350400&v=beta&t=1JwYdGWZyC4srBU85neUvi02AN50qspfuVkioptI1iY" alt="TESU-Logo">
+                <div class="role-text">
+                    <p class="role-title">Thomas Edison State University</p>
+                    <p class="role-details">B. S. Information Technology &#183; 2015 - 2018</p>
+                </div>
+                <span class="role-experience"></span>
+                <p class="role-text"></p>
+            </div>
+
+            <hr class="company-divide">
+
+            <div class="role-section">
+                <!-- This role-header-flexbox is a flex container that holds the role header data: img, school, degree -->
+                <div class="role-header-flexbox">
+                    <img class="role-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLc4FIRhqrMQFzhoWOIBHxG2nuT3hHWf4vYq3PzJ3l_SSdmksA" alt="TESU-Logo">
+                    <div class="role-text">
+                        <p class="role-title">Tri-City Christian Academy</p>
+                        <p class="role-details">High School &#183; 2010 - 2014</p>
+                    </div>
+                </div>
     </div>
-</div>
-<div class="block">
-    <h2>Education</h2>
-    <div class="school">
-        <img class="company-logo" src="https://media.licdn.com/dms/image/C560BAQGJ5uL-usZ0Yg/company-logo_100_100/0/1638370038780/thomas_edison_state_university_logo?e=1707350400&v=beta&t=1JwYdGWZyC4srBU85neUvi02AN50qspfuVkioptI1iY" alt="TESU-Logo">
-        <p class="school-name">Thomas Edison State University</p>
-        <p class="degree">BS Information Technology &#183; 2016 - 2018</p>
-    </div>
-    <hr class="company-divide">
-    <div class="school">
-        <img class="company-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLc4FIRhqrMQFzhoWOIBHxG2nuT3hHWf4vYq3PzJ3l_SSdmksA" alt="CP-No-Logo">
-        <p class="school-name">College Plus</p>
-        <p class="degree">Information Technology &#183; 2015 - 2016</p>
-    </div>
-    <hr class="company-divide">
-    <div class="school">
-        <img class="company-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLc4FIRhqrMQFzhoWOIBHxG2nuT3hHWf4vYq3PzJ3l_SSdmksA" alt="TCCA-No-Logo">
-        <p class="school-name">Tri-City Christian Academy</p>
-        <p class="degree">High School &#183; 2010 - 2014</p>
-    </div>
-</div>
-<p></p>
+
 </body>
 </html>

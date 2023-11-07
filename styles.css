@@ -1,32 +1,17 @@
 body {
-    background-color: #7c98b3;
     margin-bottom: 8rem;
+    background-color: #7c98b3;
 }
+
 h1 {
-    margin-left: 4rem;
+    margin-left: 6rem;
     margin-bottom: 0px;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 h2 {
     font-size: 1.5rem;
 }
-.images {
-    vertical-align: middle;
-    }
-#headshot {
-    border-radius: 50%;
-    border: solid black #536b78;
-    width: 25%;
-    max-width: 20rem;
-}
-#images {
-    height: 20rem;
-}
-#blinky {
-    width: 45%;
-    max-width: 30rem;
-    border-radius: 10px;
-}
+
 .flexbox-container {
     margin-top: 0px;
     display: flex;
@@ -34,36 +19,76 @@ h2 {
     align-items: center;
 }
 
-#title {
-    margin-left: 4rem;
-    margin-top: 0px;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
+.images {
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
+.company-divide {
+    border-top: solid #536b78 .10rem;
+    width: 95%;
+    margin-bottom: 5%;
+}
+
 .block {
     border: solid #536b78 .15rem;
     border-radius: 10px;
-    margin-top: 1rem;
-    padding: 1rem;
-    padding-top: 0rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
     background-color: #cee5f2;
+    padding: 0px;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 1rem;
 }
-.company-divide {
-    border-top: solid #536b78 .10rem;
+
+.role-section {
+    margin-bottom: 5%;
 }
-.title {
+
+.role-header-flexbox {
+    padding: 0px;
+    margin: 1rem;
+    display: flex;
+
+}
+
+.role-img {
+    height: 3rem;
+}
+
+.role-text {
+    margin-left: 1rem;
+}
+
+.role-title {
     font-weight: bold;
     font-size: 1.25rem;
-    margin-bottom: 0rem;
-    padding-bottom: 0rem;
+    margin: 0%;
 }
-.company-name {
+
+.role-details {
+    margin: 0%;
     font-style: italic;
-    margin-top: 0.25rem;
+    font-size: 1.1rem;
 }
-.company-logo {
-    width: 48px;
-    height: 48px;
+
+#headshot {
+    border-radius: 50%;
+    border: solid black #536b78;
+    width: 20%;
+    max-width: 15rem;
+}
+#images {
+    height: 15rem;
+}
+#blinky {
+    width: 30%;
+    max-width: 20rem;
+    min-width: 10rem;
+    border-radius: 10px;
+}
+#title {
+    margin-left: 6rem;
+    margin-top: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
 }
