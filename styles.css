@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-    margin-left: 6rem;
+    margin-left: 20%;
     margin-bottom: 0px;
     font-size: 3rem;
 }
@@ -35,8 +35,8 @@ h2 {
     border-radius: 10px;
     background-color: #cee5f2;
     padding: 0px;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 1rem;
 }
 
@@ -87,7 +87,7 @@ h2 {
     border-radius: 10px;
 }
 #title {
-    margin-left: 6rem;
+    margin-left: 20%;
     margin-top: 0px;
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
