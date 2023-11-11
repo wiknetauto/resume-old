@@ -22,9 +22,10 @@ h2 {
 }
 .company-divide {
     border-top: solid #536b78 .10rem;
-    margin-left: 5%;
+    /* margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 5%; */
+    margin: 5%;
 }
 .block {
     border: solid #536b78 .15rem;

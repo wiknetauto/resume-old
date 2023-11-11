@@ -25,191 +25,37 @@
             <h2>About</h2>
             <p>Network and systems engineer supporting clients in the finance and banking industry, skilled in Azure, Cisco networking, Windows server administration, Office 365, and VMware virtualization. Strengths include commitment to the job, a passion for customer experience that forges positive perception and satisfaction, strong communication and stakeholder management, and technical expertise.
             </p>
+        </div>
     </div>
-    </div>
-
 
     <!-- This class block div represents the entire work experience block on the page -->
     <div class="block" id="app">
 
         <!-- This role-section div represent a single work-role -->
-        <div class="role-section">
+        <div class="role-section" v-for="job in jobs">
             <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
             <div class="role-header-flexbox">
-                <img class="role-img" :src="jobs[0].img" :alt="jobs[0].alt">
+                <img class="role-img" :src="job.img" :alt="job.alt">
                 <div class="role-header-text">
-                    <p class="role-title">{{ jobs[0].title }}</p>
-                    <p class="role-details"> {{ jobs[0].company }} &#183; {{ jobs[0].status}} </p>
-                    <p class="role-details"> {{ jobs[0].location}} &#183; {{ jobs[0].office }} </p>
+                    <p class="role-title">{{ job.title }}</p>
+                    <p class="role-details"> {{ job.company }} &#183; {{ job.status}} </p>
+                    <p class="role-details"> {{ job.location}} &#183; {{ job.office }} </p>
                 </div>
             </div>
             <!-- This role-experience span contains the ul of work experience role -->
             <span class="role-experience">
                 <ul class="role-text">
-                    <li v-for="detail in jobs[0].details">{{detail}}</li>
+                    <li v-for="detail in job.details">{{detail}}</li>
                 </ul>
 
                 <div class="role-skills-vue">
                     <div><b>Skills: </b></div>
-                    <div v-for="skill in jobs[0].skills">{{skill}}</div>
+                    <div v-for="skill in job.skills">{{skill}}</div>
                 </div>
             </span>
-        </div>
-
-        <hr class="company-divide">
-
-        <!-- This role-section div represent a single work-role -->
-        <div class="role-section">
-            <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
-            <div class="role-header-flexbox">
-                <img class="role-img" src="https://media.licdn.com/dms/image/C4D0BAQEdRuehGN2rGQ/company-logo_100_100/0/1633369276620/domain_technology_partners_logo?e=1707350400&v=beta&t=eublF2aKFxd4MjuvsNXb0A-KewCIsx8GV45Ar1oPqwY" alt="Integris-Logo">
-                <div class="role-header-text">
-                    <p class="role-title">Project Enginner III</p>
-                    <p class="role-details">CalTech &#183; Full-time</p>
-                    <p class="role-details">Austin, Texas Metropolitan Area &#183; Remote</p>
-                </div>
-            </div>
-            <!-- This role-experience span contains the ul of work experience role -->
-            <span class="role-experience">
-                <ul class="role-text">
-                    <li>Lead engineer on new customer onboardings</li>
-                    <li>Lead engineer on server migrations to the CalTech datacenter</li>
-                    <li>Senior technical resource for project engineers</li>
-                    <li>Migrated core banking routers to the CalTech datacenter</li>
-                    <li>Network upgrades deploying Cisco routers, switches, and firewalls</li>
-                    <li>Windows server migrations from 2008/2012 to server 2019</li>
-                    <li>Deployed, documented, and created standard processes around CalTech's new cybersecurity product</li>
-                    <li>Conducted cybersecurity product deployment training for project engineers</li>
-        </ul>
-        <p class="role-skills"><b>Skills:</b> Network Administration &#183; Azure Networking &#183; Cisco Networking &#183; Windows Server &#183; VMware &#183; Microsoft 365</p>
-            </span>
-        </div>
-<!-- This role-section div represent a single work-role -->
-        <div class="role-section">
-            <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
-            <div class="role-header-flexbox">
-                <img class="role-img" src="https://media.licdn.com/dms/image/C4D0BAQEdRuehGN2rGQ/company-logo_100_100/0/1633369276620/domain_technology_partners_logo?e=1707350400&v=beta&t=eublF2aKFxd4MjuvsNXb0A-KewCIsx8GV45Ar1oPqwY" alt="Integris-Logo">
-                <div class="role-header-text">
-                    <p class="role-title">Project Engineer II</p>
-                    <p class="role-details">CalTech &#183; Full-time</p>
-                    <p class="role-details">Austin, Texas Metropolitan Area &#183; Onsite</p>
-                </div>
-            </div>
-            <!-- This role-experience span contains the ul of work experience role -->
-            <span class="role-experience">
-                <ul class="role-text">
-                    <li>Scoped and priced client projects and exceeded target efficiency by 6%</li>
-                    <li>Surpassed yearly revenue goal</li>
-                    <li>Executed server 2008 to server 2019 migrations</li>
-                    <li>Performed network upgrades including Cisco 2960 and 9200 series switches, Cisco ISR 4000 series routers, - Cisco ASA 5506, Cisco Call Manager Express, Cisco Meraki access points and switches, and Cisco AnyConnect VPN</li>
-                    <li>Planned and executed new site turn ups</li>
-                    <li>Migrated core banking routers to the CalTech datacenters</li>
-                    <li>Upgraded ATMs and ATM network equipment</li>
-                    <li>Configured Microsoft MDT Server to facilitate mass Windows 10 deployments</li>
-                    <li>Installed and upgraded VMWare ESXi versions 5.x, 6.x, and 7.x including SAN implementations</li>
-                    <li>Migrated clients from Exchange 2013/2016 to Office 365</li>
-                    <li>Configured Office 365 for DMARC email security</li>
-                    <li>Migrated clients between email filter and email encryption solutions</li>
-                    <li>Deployed Microsoft Intune MDM for mobile device and mobile app management</li>
-                    <li>Built Azure Conditional Access rules securing access to Azure and Office 365</li>
-        </ul>
-        <p class="role-skills"><b>Skills:</b> Network Administration &#183; Azure Networking &#183; Cisco Networking &#183; Windows Server &#183; VMware &#183; Microsoft 365</p>
-            </span>
-        </div>
-
-
-        <!-- This role-section div represent a single work-role -->
-        <div class="role-section">
-            <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
-            <div class="role-header-flexbox">
-                <img class="role-img" src="https://media.licdn.com/dms/image/C4D0BAQEdRuehGN2rGQ/company-logo_100_100/0/1633369276620/domain_technology_partners_logo?e=1707350400&v=beta&t=eublF2aKFxd4MjuvsNXb0A-KewCIsx8GV45Ar1oPqwY" alt="Integris-Logo">
-                <div class="role-header-text">
-                    <p class="role-title">Tier 2 Engineer</p>
-                    <p class="role-details">CalTech &#183; Full-time</p>
-                    <p class="role-details">Austin, Texas Metropolitan Area &#183; Onsite</p>
-                </div>
-            </div>
-            <!-- This role-experience span contains the ul of work experience role -->
-            <span class="role-experience">
-                <ul class="role-text">
-                    <li>Provide support and resolutio for Priority 1 issues</li>
-                    <li>Escalation point for helpdesk tickets</li>
-                    <li>Documented customer networks and tested critical backup infrastructure</li>
-                    <li>Migrated email filtering services from on premise Linux appliances to Zix cloud-based encryption</li>
-                    <li>Migrated email filtering services from on Sophos Reflexion to Zix cloud-based filter</li>
-        </ul>
-        <p class="role-skills"><b>Skills:</b> Network Administration &#183; Azure Networking &#183; Cisco Networking &#183; Windows Server &#183; VMware &#183; Microsoft 365</p>
-            </span>
-        </div>
-
-
-        <!-- This role-section div represent a single work-role -->
-        <div class="role-section">
-            <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
-            <div class="role-header-flexbox">
-                <img class="role-img" src="https://media.licdn.com/dms/image/C4D0BAQEdRuehGN2rGQ/company-logo_100_100/0/1633369276620/domain_technology_partners_logo?e=1707350400&v=beta&t=eublF2aKFxd4MjuvsNXb0A-KewCIsx8GV45Ar1oPqwY" alt="Integris-Logo">
-                <div class="role-header-text">
-                    <p class="role-title">Tier 1 Engineer</p>
-                    <p class="role-details">CalTech &#183; Full-time</p>
-                    <p class="role-details">Austin, Texas Metropolitan Area &#183; Onsite</p>
-                </div>
-            </div>
-            <!-- This role-experience span contains the ul of work experience role -->
-            <span class="role-experience">
-                <ul class="role-text">
-                    <li>Provided first line of support for customers and internal staff</li>
-                    <li>Resolved break/fix issues with a priority placed upon customer service, perception, and satisfaction</li> <li>Created and updated knowledge base articles with issue resolution and created documentation for software installation and upgrades</li> <li>Applied working knowledge of policies and procedures, determining the best course of action to resolve issues according to service-level objectives</li> <li>Managed workstation upgrades for multiple projects, installing hardware, software, and peripherals, and provided onsite support for clients in the greater Austin area</li>
-                    <li>Assisted new team members with technical issues, workflow, and proper escalation procedures</li>
-        </ul>
-        <p class="role-skills"><b>Skills:</b> Network Administration &#183; Azure Networking &#183; Cisco Networking &#183; Windows Server &#183; VMware &#183; Microsoft 365</p>
-            </span>
-        </div>
-
-        <hr class="company-divide">
-
-        <!-- This role-section div represent a single work-role -->
-        <div class="role-section">
-            <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
-            <div class="role-header-flexbox">
-                <img class="role-img" src="https://media.licdn.com/dms/image/D560BAQGs1CBbJ5vMPA/company-logo_100_100/0/1663676834577/baesystemsinc_logo?e=1707350400&v=beta&t=yGRBpRbgkStjegmUULTDTZybJotmIqLyt5tLgbqjR6Q" alt="BAE Systems-Logo">
-                <div class="role-header-text">
-                    <p class="role-title">Tech Intern II</p>
-                    <p class="role-details">BAE Systems &#183; Full-time</p>
-                    <p class="role-details">Hudson, NH &#183; Onsite</p>
-                </div>
-            </div>
-            <!-- This role-experience span contains the ul of work experience role -->
-            <span class="role-experience">
-                <ul class="role-text">
-                    <li>Supported Engineering Tools group, handling break/fix tickets in Remedy and tested applications in Windows 10 ahead of Windows 7 to Windows 10 upgrades</li>
-                    <li>Converted internal web-based applications from self-signed certificates to Active Directory PKI, including IBM Apache server</li>
-        </ul>
-        <p class="role-skills"><b>Skills:</b> Network Administration &#183; Azure Networking &#183; Cisco Networking &#183; Windows Server &#183; VMware &#183; Microsoft 365</p>
-            </span>
-        </div>
-
-        <!-- This role-section div represent a single work-role -->
-        <div class="role-section">
-            <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
-            <div class="role-header-flexbox">
-                <img class="role-img" src="https://media.licdn.com/dms/image/D560BAQGs1CBbJ5vMPA/company-logo_100_100/0/1663676834577/baesystemsinc_logo?e=1707350400&v=beta&t=yGRBpRbgkStjegmUULTDTZybJotmIqLyt5tLgbqjR6Q" alt="BAE Systems-Logo">
-                <div class="role-header-text">
-                    <p class="role-title">Tech Intern I</p>
-                    <p class="role-details">BAE Systems &#183; Full-time</p>
-                    <p class="role-details">Merrimack, NH &#183; Onsite</p>
-                </div>
-            </div>
-            <!-- This role-experience span contains the ul of work experience role -->
-            <span class="role-experience">
-                <ul class="role-text">
-                    <li>Provided helpdesk first line of support for end users, handling break/fix tickets in Remedy for software applications and hardware issues</li>
-                    <li>Performed desktop upgrades, inventory management, and printer support for multiple sites</li>
-        </ul>
-        <p class="role-skills"><b>Skills:</b> Network Administration &#183; Azure Networking &#183; Cisco Networking &#183; Windows Server &#183; VMware &#183; Microsoft 365</p>
-            </span>
+            <hr class="company-divide">
         </div>
     </div>
-
     <!-- This class block div represent the Education section -->
     <div class="block">
         <div class="role-section">
