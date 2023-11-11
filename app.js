@@ -25,7 +25,7 @@ const app = Vue.createApp({
                     ],
                 },
                 {
-                    img: "/img/caltech.png",
+                    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTghZCN-myG-spjB3lMhr6dKLNjFOoeXkkzVEkwUbNvIa_7m5XzHh8v6Y_wGX16bsM_AW8&usqp=CAU",
                     alt: "Caltech-Logo",
                     company: "CalTech Software Systems",
                     title: "Project Engineer III",
@@ -51,7 +51,7 @@ const app = Vue.createApp({
                     ],
                 },
                 {
-                    img: "/img/caltech.png",
+                    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTghZCN-myG-spjB3lMhr6dKLNjFOoeXkkzVEkwUbNvIa_7m5XzHh8v6Y_wGX16bsM_AW8&usqp=CAU",
                     alt: "CalTech-Logo",
                     company: "CalTech Software Systems",
                     title: "Project Engineer II",
@@ -83,7 +83,7 @@ const app = Vue.createApp({
                     ],
                 },
                 {
-                    img: "/img/caltech.png",
+                    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTghZCN-myG-spjB3lMhr6dKLNjFOoeXkkzVEkwUbNvIa_7m5XzHh8v6Y_wGX16bsM_AW8&usqp=CAU",
                     alt: "CalTech-Logo",
                     company: "CalTech Software Systems",
                     title: "Tier II Engineer",
@@ -100,7 +100,7 @@ const app = Vue.createApp({
                     skills: ["Windows Server", "VMware", "Microsoft 365"],
                 },
                 {
-                    img: "/img/caltech.png",
+                    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTghZCN-myG-spjB3lMhr6dKLNjFOoeXkkzVEkwUbNvIa_7m5XzHh8v6Y_wGX16bsM_AW8&usqp=CAU",
                     alt: "CalTech-Logo",
                     company: "CalTech Software Systems",
                     title: "Tier I Engineer",
