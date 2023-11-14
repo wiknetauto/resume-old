@@ -13,12 +13,14 @@ h2 {
 .flexbox-container {
     margin-top: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
+
 .images {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 5%;
+    flex: 1;
 }
 .company-divide {
     border-top: solid #536b78 .10rem;
@@ -71,15 +73,13 @@ h2 {
     border-radius: 50%;
     border: solid black #536b78;
     width: 20%;
+    min-width: 235px;
     max-width: 15rem;
-}
-#images {
-    height: 15rem;
 }
 #blinky {
     width: 30%;
     max-width: 20rem;
-    min-width: 10rem;
+    min-width: 320px;
     border-radius: 10px;
 }
 #title {
@@ -98,7 +98,28 @@ h2 {
 .role-skills-vue {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
     margin-left: 7%;
     margin-right: 5%;
+    /* border: 10px solid red; */
+}
+
+.role-skills-vue > * {
+    /* flex: 1; */
+    /* border: 10px solid blue */
+}
+
+.skill-items-parent {
+    flex-grow: 2;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1rem; */
+}
+.skill-items {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* border: 10px solid black; */
+    padding: 0;
+    margin: 2px;
+    margin-right: 30px;
 }
