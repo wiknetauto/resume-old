@@ -6,69 +6,71 @@
     <title>Nathan Wikman Resume</title>
     <link rel="icon" type="image/x-icon" href="/img/folder-dynamic-premium.png">
     <!-- Favicon from 3dICONS, check them out at https://3dicons.co/ -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./dist/output.css">
     <script src="https://unpkg.com/vue@3.0.2"></script>
 </head>
 <body>
-<body>
-    <h1>Nathan Wikman</h1>
-    <p id="title">Solutions Architect &#64; Integris</p>
-    <div class="block flexbox-container">
-        <img class="images" id="headshot" src="./img/nathan.jpeg" alt="nathan_wikman">
-        <img class="images" id="blinky" src="./img/713171601807249408.gif" alt="blinky-blinkey">
+<body class="mx-60">
+    <div class="mt-8 mb-4">
+        <h1 class="text-4xl font-bold">Nathan Wikman</h1>
+        <p class="text-2xl">Solutions Architect &#64; Integris</p>
+    </div>
+    <div class="flex justify-between items-center p-4">
+        <img class="rounded-full w-48 h-48 " src="./img/nathan.jpeg" alt="nathan_wikman">
+        <img class="rounded-md w-2/4 h-auto max-w-xs" src="./img/713171601807249408.gif" alt="blinky-blinkey">
     </div>
 
     <!-- This class block contains the About section -->
-    <div class="block">
-        <div class="role-text about">
-            <h2>About</h2>
+    <div>
+        <div class="border-solid border-4 mt-8 mb-8 p-4 rounded-md">
+            <h2 class="text-2xl font-bold">About</h2>
             <p>Network and systems engineer supporting clients in the finance and banking industry, skilled in Azure, Cisco networking, Windows server administration, Office 365, and VMware virtualization. Strengths include commitment to the job, a passion for customer experience that forges positive perception and satisfaction, strong communication and stakeholder management, and technical expertise.
             </p>
         </div>
     </div>
 
     <!-- This class block div represents the entire work experience block on the page -->
-    <div class="block" id="app">
+    <div class="border-solid border-4 mt-8 mb-8 p-4 rounded-md" id="app">
 
         <!-- This role-section div represent a single work-role -->
-        <div class="role-section" v-for="job in jobs">
+        <div v-for="job in jobs">
             <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
-            <div class="role-header-flexbox">
-                <img class="role-img" :src="job.img" :alt="job.alt">
-                <div class="role-header-text">
-                    <p class="role-title">{{ job.title }}</p>
-                    <p class="role-details"> {{ job.company }} &#183; {{ job.status}} </p>
-                    <p class="role-details"> {{ job.location}} &#183; {{ job.office }} </p>
+            <div class="flex">
+                <img class="w-20 h-20" :src="job.img" :alt="job.alt">
+                <div class="ml-2">
+                    <p class="text-xl font-bold">{{ job.title }}</p>
+                    <p> {{ job.company }} &#183; {{ job.status}} </p>
+                    <p> {{ job.location}} &#183; {{ job.office }} </p>
                 </div>
             </div>
             <!-- This role-experience span contains the ul of work experience role -->
-            <span class="role-experience">
-                <ul class="role-text">
+            <span>
+                <ul>
                     <li v-for="detail in job.details">{{detail}}</li>
                 </ul>
 
-                <div class="role-skills-vue">
+                <div>
                     <div><b>Skills: </b></div>
-                    <div class="skill-items-parent">
-                        <div class="skill-items" v-for="skill in job.skills">{{skill}}</div>
+                    <div>
+                        <div v-for="skill in job.skills">{{skill}}</div>
                     </div>
                 </div>
             </span>
-            <hr class="company-divide">
+            <hr class="mt-5 mb-5">
         </div>
     </div>
     <!-- This class block div represent the Education section -->
-    <div class="block">
-        <div class="role-section">
+    <div>
+        <div>
             <!-- This role-header-flexbox is a flex container that holds the role header data: img, school, degree -->
-            <div class="role-header-flexbox">
-                <img class="role-img" src="https://media.licdn.com/dms/image/C560BAQGJ5uL-usZ0Yg/company-logo_100_100/0/1638370038780/thomas_edison_state_university_logo?e=1707350400&v=beta&t=1JwYdGWZyC4srBU85neUvi02AN50qspfuVkioptI1iY" alt="TESU-Logo">
-                <div class="role-header-text">
-                    <p class="role-title">Thomas Edison State University</p>
-                    <p class="role-details">B. S. Information Technology &#183; 2015 - 2018</p>
+            <div>
+                <img src="https://media.licdn.com/dms/image/C560BAQGJ5uL-usZ0Yg/company-logo_100_100/0/1638370038780/thomas_edison_state_university_logo?e=1707350400&v=beta&t=1JwYdGWZyC4srBU85neUvi02AN50qspfuVkioptI1iY" alt="TESU-Logo">
+                <div>
+                    <p>Thomas Edison State University</p>
+                    <p>B. S. Information Technology &#183; 2015 - 2018</p>
                 </div>
-                <span class="role-experience"></span>
-                <p class="role-text"></p>
+                <span></span>
+                <p></p>
             </div>
 
             <hr class="company-divide">

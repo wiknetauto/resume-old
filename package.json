@@ -1,0 +1,23 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "\"my resume web dev project\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wiknetauto/resume.git"
+  },
+  "author": "nathan.wikman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wiknetauto/resume/issues"
+  },
+  "homepage": "https://github.com/wiknetauto/resume#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
