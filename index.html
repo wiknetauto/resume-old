@@ -10,81 +10,85 @@
     <script src="https://unpkg.com/vue@3.0.2"></script>
 </head>
 <body>
-<body class="mx-60">
-    <div class="mt-8 mb-4">
-        <h1 class="text-4xl font-bold">Nathan Wikman</h1>
-        <p class="text-2xl">Solutions Architect &#64; Integris</p>
-    </div>
-    <div class="flex justify-between items-center p-4">
-        <img class="rounded-full w-48 h-48 " src="./img/nathan.jpeg" alt="nathan_wikman">
-        <img class="rounded-md w-2/4 h-auto max-w-xs" src="./img/713171601807249408.gif" alt="blinky-blinkey">
-    </div>
-
-    <!-- This class block contains the About section -->
-    <div>
-        <div class="border-solid border-4 mt-8 mb-8 p-4 rounded-md">
-            <h2 class="text-2xl font-bold">About</h2>
-            <p>Network and systems engineer supporting clients in the finance and banking industry, skilled in Azure, Cisco networking, Windows server administration, Office 365, and VMware virtualization. Strengths include commitment to the job, a passion for customer experience that forges positive perception and satisfaction, strong communication and stakeholder management, and technical expertise.
-            </p>
-        </div>
-    </div>
-
-    <!-- This class block div represents the entire work experience block on the page -->
-    <div class="border-solid border-4 mt-8 mb-8 p-4 rounded-md" id="app">
-
-        <!-- This role-section div represent a single work-role -->
-        <div v-for="job in jobs">
-            <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
-            <div class="flex">
-                <img class="w-20 h-20" :src="job.img" :alt="job.alt">
-                <div class="ml-2">
-                    <p class="text-xl font-bold">{{ job.title }}</p>
-                    <p> {{ job.company }} &#183; {{ job.status}} </p>
-                    <p> {{ job.location}} &#183; {{ job.office }} </p>
+<body>
+    <div class="min-h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image: url(/img/mitchell-kmetz-KIFEQ82Rxgc-unsplash.jpg); max-height: 200px; overflow: hidden;">
+        <div class="w-10/12 p-6 bg-white bg-opacity-75">
+            <div class="flex justify-start items-center pt-4 mt-20 mb-20">
+                <img class="rounded-full object-cover w-24 h-24 max-w-xs" src="./img/nw.jpeg" alt="nathan_wikman">
+                <div class="mt-4 mb-4 ml-4">
+                    <h1 class="text-4xl font-bold tracking-wider">Nathan Wikman</h1>
+                    <p class="text-2xl mt-2 tracking-wide">Solutions Architect &#64; Integris</p>
                 </div>
             </div>
-            <!-- This role-experience span contains the ul of work experience role -->
-            <span>
-                <ul>
-                    <li v-for="detail in job.details">{{detail}}</li>
-                </ul>
-
-                <div>
-                    <div><b>Skills: </b></div>
-                    <div>
-                        <div v-for="skill in job.skills">{{skill}}</div>
-                    </div>
-                </div>
-            </span>
-            <hr class="mt-5 mb-5">
         </div>
     </div>
-    <!-- This class block div represent the Education section -->
-    <div>
+<div class="mx-48">
+        <!-- This class block contains the About section -->
         <div>
-            <!-- This role-header-flexbox is a flex container that holds the role header data: img, school, degree -->
-            <div>
-                <img src="https://media.licdn.com/dms/image/C560BAQGJ5uL-usZ0Yg/company-logo_100_100/0/1638370038780/thomas_edison_state_university_logo?e=1707350400&v=beta&t=1JwYdGWZyC4srBU85neUvi02AN50qspfuVkioptI1iY" alt="TESU-Logo">
-                <div>
-                    <p>Thomas Edison State University</p>
-                    <p>B. S. Information Technology &#183; 2015 - 2018</p>
-                </div>
-                <span></span>
-                <p></p>
+            <div class="mt-16 mb-16 p-4 rounded-md">
+                <h2 class="text-2xl font-bold mb-4">About</h2>
+                <p>Network and systems engineer supporting clients in the finance and banking industry, skilled in Azure, Cisco networking, Windows server administration, Office 365, and VMware virtualization. Strengths include commitment to the job, a passion for customer experience that forges positive perception and satisfaction, strong communication and stakeholder management, and technical expertise.
+                </p>
             </div>
+        </div>
 
-            <hr class="company-divide">
+        <!-- This class block div represents the entire work experience block on the page -->
+        <div class="mt-8 mb-8 p-4 rounded-md" id="app">
 
-            <div class="role-section">
-                <!-- This role-header-flexbox is a flex container that holds the role header data: img, school, degree -->
-                <div class="role-header-flexbox">
-                    <img class="role-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLc4FIRhqrMQFzhoWOIBHxG2nuT3hHWf4vYq3PzJ3l_SSdmksA" alt="TESU-Logo">
-                    <div class="role-header-text">
-                        <p class="role-title">Tri-City Christian Academy</p>
-                        <p class="role-details">High School &#183; 2010 - 2014</p>
+            <!-- This role-section div represent a single work-role -->
+            <div v-for="job in jobs">
+                <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
+                <div class="flex">
+                    <img class="w-14 h-14 my-2" :src="job.img" :alt="job.alt">
+                    <div class="ml-4">
+                        <p class="text-xl font-bold">{{ job.title }}</p>
+                        <p> {{ job.company }} &#183; {{ job.status}} </p>
+                        <p> {{ job.location}} &#183; {{ job.office }} </p>
                     </div>
                 </div>
-    </div>
-    <script src="app.js"></script>
+                <!-- This role-experience span contains the ul of work experience role -->
+                <div>
+                    <div class="m-4">
+                        <ul>
+                            <li class="list-disc ml-6" v-for="detail in job.details">{{detail}}</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div><b>Skills: </b>
+                            <span class="bg-gray-300 text-gray-800 text-sm py-1 px-2 rounded inline-flex items-center ml-2 mb-1" v-for="skill in job.skills"> {{skill}} </span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-5 mb-5">
+            </div>
+        </div>
+        <!-- This class block div represent the Education section -->
+        <div>
+            <div>
+                <!-- This role-header-flexbox is a flex container that holds the role header data: img, school, degree -->
+                <div>
+                    <img src="https://media.licdn.com/dms/image/C560BAQGJ5uL-usZ0Yg/company-logo_100_100/0/1638370038780/thomas_edison_state_university_logo?e=1707350400&v=beta&t=1JwYdGWZyC4srBU85neUvi02AN50qspfuVkioptI1iY" alt="TESU-Logo">
+                    <div>
+                        <p>Thomas Edison State University</p>
+                        <p>B. S. Information Technology &#183; 2015 - 2018</p>
+                    </div>
+                    <span></span>
+                    <p></p>
+                </div>
+
+                <hr class="company-divide">
+
+                <div class="role-section">
+                    <!-- This role-header-flexbox is a flex container that holds the role header data: img, school, degree -->
+                    <div class="role-header-flexbox">
+                        <img class="role-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLc4FIRhqrMQFzhoWOIBHxG2nuT3hHWf4vYq3PzJ3l_SSdmksA" alt="TESU-Logo">
+                        <div class="role-header-text">
+                            <p class="role-title">Tri-City Christian Academy</p>
+                            <p class="role-details">High School &#183; 2010 - 2014</p>
+                        </div>
+                    </div>
+        </div>
+        <script src="app.js"></script>
+</div>
 </body>
 </html>
