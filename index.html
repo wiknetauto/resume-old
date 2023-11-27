@@ -25,68 +25,60 @@
 <div class="mx-6 sm:mx-16 lg:mx-32 xl:mx-48">
         <!-- This class block contains the About section -->
         <div>
-            <div class="mt-16 mb-16 p-4 rounded-md">
-                <h2 class="text-2xl font-bold mb-4">About</h2>
+            <h2 class="text-3xl font-bold mt-20">About</h2>
+            <div class="mt-4 border-2 rounded-lg p-5">
                 <p>Network and systems engineer supporting clients in the finance and banking industry, skilled in Azure, Cisco networking, Windows server administration, Office 365, and VMware virtualization. Strengths include commitment to the job, a passion for customer experience that forges positive perception and satisfaction, strong communication and stakeholder management, and technical expertise.
                 </p>
             </div>
         </div>
 
-        <!-- This class block div represents the entire work experience block on the page -->
-        <div class="mt-8 mb-8 p-4 rounded-md" id="app">
-
-            <!-- This role-section div represent a single work-role -->
-            <div v-for="job in jobs">
-                <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
-                <div class="flex">
-                    <img class="w-14 h-14 my-2" :src="job.img" :alt="job.alt">
-                    <div class="ml-4">
-                        <p class="text-xl font-bold">{{ job.title }}</p>
-                        <p> {{ job.company }} &#183; {{ job.status}} </p>
-                        <p> {{ job.location}} &#183; {{ job.office }} </p>
-                    </div>
-                </div>
-                <!-- This role-experience span contains the ul of work experience role -->
-                <div>
-                    <div class="m-4">
-                        <ul>
-                            <li class="list-disc ml-6" v-for="detail in job.details">{{detail}}</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div><b>Skills: </b>
-                            <span class="bg-gray-300 text-gray-800 text-sm py-1 px-2 rounded inline-flex items-center ml-2 mb-1" v-for="skill in job.skills"> {{skill}} </span>
+        <!-- This class block div represents the entire work experience & education blocks on the page -->
+        <div class="mb-20" id="app">
+            <h2 class="text-3xl font-bold mt-20" >Experience</h2>
+            <div class="mt-4 border-2 rounded-lg p-5" >
+                <!-- This role-section div represent a single work-role -->
+                <div v-for="(job, index) in jobs" :key="index">
+                    <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
+                    <div class="flex">
+                        <img class="w-14 h-14 my-2" :src="job.img" :alt="job.alt">
+                        <div class="ml-4">
+                            <p class="text-xl font-bold">{{ job.title }}</p>
+                            <p> {{ job.company }} &#183; {{ job.status}} </p>
+                            <p> {{ job.location}} &#183; {{ job.office }} </p>
                         </div>
                     </div>
+                    <!-- This role-experience span contains the ul of work experience role -->
+                    <div>
+                        <div class="m-4">
+                            <ul>
+                                <li class="list-disc ml-6" v-for="detail in job.details">{{detail}}</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div><b>Skills: </b>
+                                <span class="bg-gray-300 text-gray-800 text-sm py-1 px-2 rounded inline-flex items-center ml-2 mb-1" v-for="skill in job.skills"> {{skill}} </span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-10 mb-10" v-if="index < jobs.length - 1">
                 </div>
-                <hr class="mt-5 mb-5">
             </div>
-        </div>
-        <!-- This class block div represent the Education section -->
-        <div>
-            <div>
-                <!-- This role-header-flexbox is a flex container that holds the role header data: img, school, degree -->
-                <div>
-                    <img src="https://media.licdn.com/dms/image/C560BAQGJ5uL-usZ0Yg/company-logo_100_100/0/1638370038780/thomas_edison_state_university_logo?e=1707350400&v=beta&t=1JwYdGWZyC4srBU85neUvi02AN50qspfuVkioptI1iY" alt="TESU-Logo">
-                    <div>
-                        <p>Thomas Edison State University</p>
-                        <p>B. S. Information Technology &#183; 2015 - 2018</p>
-                    </div>
-                    <span></span>
-                    <p></p>
-                </div>
-
-                <hr class="company-divide">
-
-                <div class="role-section">
-                    <!-- This role-header-flexbox is a flex container that holds the role header data: img, school, degree -->
-                    <div class="role-header-flexbox">
-                        <img class="role-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLc4FIRhqrMQFzhoWOIBHxG2nuT3hHWf4vYq3PzJ3l_SSdmksA" alt="TESU-Logo">
-                        <div class="role-header-text">
-                            <p class="role-title">Tri-City Christian Academy</p>
-                            <p class="role-details">High School &#183; 2010 - 2014</p>
+            <h2 class="text-3xl font-bold mt-20 mb-4" >Education</h2>
+            <!-- This div represent the Education section -->
+            <div class="mt-4 border-2 rounded-lg p-5">
+                <div v-for="(school, index) in schools" :key="index">
+                    <!-- This is div is a flex container that holds the school header data: img, school, degree -->
+                    <div class="flex">
+                        <img class="w-14 h-14 my-2" :src="school.img" :alt="school.alt">
+                        <div class="ml-4">
+                            <p class="text-xl font-bold" > {{school.institution}} </p>
+                            <p> {{school.degree}} </p>
+                            <p> {{school.years}} </p>
                         </div>
                     </div>
+                    <hr class="mt-10 mb-10" v-if="index < schools.length - 1">
+                </div>
+        </div>
         </div>
         <script src="app.js"></script>
 </div>

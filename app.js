@@ -151,6 +151,23 @@ const app = Vue.createApp({
                     skills: ["Windows 10", "Desktop Support"],
                 },
             ],
+            schools: [
+                {
+                    img: "https://media.licdn.com/dms/image/C560BAQGJ5uL-usZ0Yg/company-logo_100_100/0/1638370038780/thomas_edison_state_university_logo?e=1707350400&v=beta&t=1JwYdGWZyC4srBU85neUvi02AN50qspfuVkioptI1iY",
+                    alt: "TESU Logo",
+                    institution: "Thomas Edison State University",
+                    degree: "B.S. Information Technology",
+                    years: "2016 - 2018",
+                    gpa: "4.0",
+                },
+                {
+                    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLc4FIRhqrMQFzhoWOIBHxG2nuT3hHWf4vYq3PzJ3l_SSdmksA",
+                    alt: "College Plus Logo",
+                    institution: "College Plus",
+                    degree: "Information Technology",
+                    years: "2015 - 2016",
+                },
+            ],
         };
     },
 });
