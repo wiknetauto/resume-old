@@ -1,86 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathan Wikman Resume</title>
-    <link rel="icon" type="image/x-icon" href="./img/folder-dynamic-premium.png">
-    <!-- Favicon from 3dICONS, check them out at https://3dicons.co/ -->
-    <link rel="stylesheet" href="./dist/output.css">
-    <script src="https://unpkg.com/vue@3.0.2"></script>
-</head>
-<body>
-<body>
-    <div class="min-h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image: url(./img/mitchell-kmetz-KIFEQ82Rxgc-unsplash.jpg); max-height: 200px; overflow: hidden;">
-        <div class="w-10/12 p-6 bg-white bg-opacity-75">
-            <div class="flex justify-start items-center pt-4 mt-20 mb-20">
-                <img class="rounded-full object-cover w-24 h-24 max-w-xs" src="./img/nw.jpeg" alt="nathan_wikman">
-                <div class="mt-4 mb-4 ml-4">
-                    <h1 class="text-4xl lg:text-6xl font-bold tracking-wider">Nathan Wikman</h1>
-                    <p class="text-2xl lg:text-3xl mt-2 tracking-wide">Solutions Architect &#64; Integris</p>
-                </div>
-            </div>
-        </div>
-    </div>
-<div class="mx-6 sm:mx-16 lg:mx-32 xl:mx-48">
-        <!-- This class block contains the About section -->
-        <div>
-            <h2 class="text-3xl font-bold mt-20">About</h2>
-            <div class="mt-4 border-2 rounded-lg p-5">
-                <p>Network and systems engineer supporting clients in the finance and banking industry, skilled in Azure, Cisco networking, Windows server administration, Office 365, and VMware virtualization. Strengths include commitment to the job, a passion for customer experience that forges positive perception and satisfaction, strong communication and stakeholder management, and technical expertise.
-                </p>
-            </div>
-        </div>
-
-        <!-- This class block div represents the entire work experience & education blocks on the page -->
-        <div class="mb-20" id="app">
-            <h2 class="text-3xl font-bold mt-20" >Experience</h2>
-            <div class="mt-4 border-2 rounded-lg p-5" >
-                <!-- This role-section div represent a single work-role -->
-                <div v-for="(job, index) in jobs" :key="index">
-                    <!-- This role-header-flexbox is a flex container that holds the role header data: img, title, location -->
-                    <div class="flex">
-                        <img class="w-14 h-14 my-2" :src="job.img" :alt="job.alt">
-                        <div class="ml-4">
-                            <p class="text-xl font-bold">{{ job.title }}</p>
-                            <p> {{ job.company }} &#183; {{ job.status}} </p>
-                            <p> {{ job.location}} &#183; {{ job.office }} </p>
-                        </div>
-                    </div>
-                    <!-- This role-experience span contains the ul of work experience role -->
-                    <div>
-                        <div class="m-4">
-                            <ul>
-                                <li class="list-disc ml-6" v-for="detail in job.details">{{detail}}</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div><b>Skills: </b>
-                                <span class="bg-gray-300 text-gray-800 text-sm py-1 px-2 rounded inline-flex items-center ml-2 mb-1" v-for="skill in job.skills"> {{skill}} </span>
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="mt-10 mb-10" v-if="index < jobs.length - 1">
-                </div>
-            </div>
-            <h2 class="text-3xl font-bold mt-20 mb-4" >Education</h2>
-            <!-- This div represent the Education section -->
-            <div class="mt-4 border-2 rounded-lg p-5">
-                <div v-for="(school, index) in schools" :key="index">
-                    <!-- This is div is a flex container that holds the school header data: img, school, degree -->
-                    <div class="flex">
-                        <img class="w-14 h-14 my-2" :src="school.img" :alt="school.alt">
-                        <div class="ml-4">
-                            <p class="text-xl font-bold" > {{school.institution}} </p>
-                            <p> {{school.degree}} </p>
-                            <p> {{school.years}} </p>
-                        </div>
-                    </div>
-                    <hr class="mt-10 mb-10" v-if="index < schools.length - 1">
-                </div>
-        </div>
-        </div>
-        <script src="app.js"></script>
-</div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./img/folder-dynamic-premium.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nathan Resume</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="module" src="/src/main.js"></script>
+    </body>
 </html>
