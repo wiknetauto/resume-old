@@ -1,0 +1,11 @@
+# Node.js
+node_modules/
+# Build artifacts
+dist/
+# IDE and editor files
+.vscode/
+# OS-specific files
+.DS_Store
+# Package lock files
+package-lock.json
+yarn.lock
