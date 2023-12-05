@@ -1,10 +1,6 @@
 <template>
   <div>
-<<<<<<< HEAD
-    <div class="min-h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image: url('./img/mitchell-kmetz-unsplash.jpg'); max-height: 200px; overflow: hidden;">
-=======
-    <div class="min-h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image: url(../img/mitchell-kmetz-KIFEQ82Rxgc-unsplash.jpg); max-height: 200px; overflow: hidden;">
->>>>>>> parent of 10173cd (fix path to background image)
+    <div class="min-h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image: url('../img/mitchell-kmetz-KIFEQ82Rxgc-unsplash.jpg'); max-height: 200px; overflow: hidden;">
         <div class="w-10/12 p-6 bg-white bg-opacity-75">
             <div class="flex justify-start items-center pt-4 mt-20 mb-20">
                 <img class="rounded-full object-cover w-24 h-24 max-w-xs" src="../img/nw.jpeg" alt="nwikman">
